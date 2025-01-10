@@ -3,7 +3,7 @@ name: Exploring Workflow Dispatch Trigger
 on:
   workflow_dispatch:
   
-  # Inputs of the workflow_dispatch
+    # Inputs of the workflow_dispatch
     inputs:
     
       run_job:
