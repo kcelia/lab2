@@ -9,7 +9,7 @@ on:
       run_job:
         description: Run Specific Job
         type: boolean
-        required: true
+        required: false
 
       custom_message:
         description: Enter a custom message
@@ -29,5 +29,4 @@ jobs:
     steps:
       - name: Printing Custom Message
         #  Execute an echo command to print the custom_message input property of workflow_dispatch
-        run: echo "${{ inputs.custom_message }}"
-      
+        run: echo ${{ inputs.custom_message }} #end
