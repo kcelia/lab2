@@ -30,3 +30,8 @@ jobs:
       - name: Printing Custom Message
         #  Execute an echo command to print the custom_message input property of workflow_dispatch
         run: echo ${{ inputs.custom_message }} #end
+
+      # If inputs.run-job == 'true', then this step can be executed
+      - name: Printing run-job boolean value
+        if: ${{ inputs.run_job == true }}
+        run: echo ${{ inputs.run_job }}
