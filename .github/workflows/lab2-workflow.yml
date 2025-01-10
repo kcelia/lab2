@@ -25,7 +25,7 @@ jobs:
       - run: echo "Exploring Workflow Dispatch Trigger"
       
   job2:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps:
       - name: Printing Custom Message
       #  Execute an echo command to print the custom_message input property of workflow_dispatch
