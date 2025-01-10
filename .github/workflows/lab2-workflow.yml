@@ -29,5 +29,5 @@ jobs:
     steps:
       - name: Printing Custom Message
       #  Execute an echo command to print the custom_message input property of workflow_dispatch
-      run: echo ${{ inputs.custom.message }}
+      run: echo "${{ inputs.custom_message }}"
       
